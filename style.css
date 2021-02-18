@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: navy;
+    color: white;
+    margin: 1%;
+}
+h1 {
+    padding: 30px 20px 30px 110px;
+    font-size: 30px;
+}
+/* wrapper */
+/* ul */
+nav {
+    width: 13%;
+    float: left;
+    margin: 1%;
+    font-size: 20px;
+    font-weight: bold;
+}
+ul {
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 3px solid #FD7B6D;
+}
+ul li:hover {
+    color: #FD7B6D;
+}
+/* article */
+article {
+    width: 58%;
+    float: left;
+    margin: 1%;
+}
+h2 {
+    font-size: 40px;
+}
+article p{
+    font-size: 20px;
+}
+figure {
+    margin: 0;
+}
+img {
+    width: 100%;
+}
+/* aside */
+aside {
+    width: 23%;
+    float: left;
+    background-color: #FD7B6D;
+    margin: 1%;
+}
+h3 {
+    font-size: 25px;
+    padding-left: 10px;
+}
+aside p {
+    font-size: 19px;
+    padding-left: 10px;
+}
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* footer */
+footer {
+    text-align: center;
+    background-color: #F7B08C;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    /* header */
+    h1 {
+        padding: 20px 20px 20px 60px;
+        font-size: 40px;
+        margin: 0;
+    }
+    /* ul */
+    nav {
+        width: 28%;
+        font-size: 16px;
+    }
+    /* article */
+    article {
+        width: 68%;
+        float: right;
+    }
+    h2 {
+        font-size: 30px;
+        margin: 0;
+    }
+    article p{
+        font-size: 16px;
+    }
+
+/* aside */
+    aside {
+        width: 95%;
+        float: none;
+        clear:right;
+        padding: 10px;
+    }
+    aside p {
+        font-size: 16px;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    h3 {
+        font-size: 18px;
+        margin: 0;
+    }
+    
+    /* footer */
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        width: 98%;
+        float: none;
+    }
+    ul li {
+        display: inline-block;
+        width: 28%;
+        text-align: center;
+    }
+    article {
+        width: 98%;
+        float: none;
+    }
+}
